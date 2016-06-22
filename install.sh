@@ -17,7 +17,7 @@ compass create --sass-dir "sass" --output-style "compressed" --relative-assets -
 
 mkdir css
 
-sudo npm install --save-dev gulp browser-sync gulp-compass gulp-plumber gulp-pleeease;
+sudo npm install --save-dev gulp browser-sync gulp-compass gulp-plumber gulp-pleeease gulp-uglify;
 
 git clone git@bitbucket.org:takanashi66/gulp_task.git;
 cp gulp_task/gulpfile.js ./;
