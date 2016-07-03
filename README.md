@@ -2,18 +2,13 @@
 
 ```
 project/
-  ├ common/
-  │  ├ css/
-  │  │ └ style.min.css
-  │  ├ img/
-  │  └ js/
-  ├ src/
-  │  ├ node_modules/
-  │  ├ sass/
-  │  │ └ style.scss
-  │  ├ css/
-  │  │ └ style.css
-  │  ├ gulpfile.js
-  │  └ config.rb
-  └ index.htmlt
+└ common/
+  ├ config.rb
+  ├ css/
+  ├ img/
+  ├ js/
+  ├ sass/
+  └ gulp/
+    ├ gulpfile.js
+    └ node_modules/
 ```
