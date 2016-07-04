@@ -6,31 +6,26 @@ echo "What is file name? : "
 read name
 mkdir $name
 cd $name
-
 mkdir common
-cd common
+mkdir common/css
+mkdir common/img
+mkdir common/js
 
-mkdir css
-mkdir img
-mkdir js
-mkdir sass
-mkdir gulp
-
+mkdir src
+cd src
 compass create --sass-dir "sass" --output-style "compressed" --relative-assets --no-line-comments --bare
 
-cd gulp
+mkdir css
 
-sudo npm install --save-dev gulp browser-sync gulp-compass gulp-plumber gulp-pleeease gulp-uglify gulp-rename;
+sudo npm install --save-dev gulp browser-sync gulp-compass gulp-plumber gulp-pleeease gulp-uglify;
 
 git clone git@bitbucket.org:takanashi66/gulp_task.git;
 cp gulp_task/gulpfile.js ./;
 rm -rf gulp_task;
 
-cd ../../
+cd ../
 
 git init;
 
 echo .* > .gitignore
-echo common/gulp/node_module >> .gitignore
-
-cd /Users/takanashi66/Dropbox/workspace/web/$name/common/gulp/
+echo src/node_module >> .gitignore
