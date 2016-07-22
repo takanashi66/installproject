@@ -3,6 +3,7 @@
 ```
 project/
   ├ common/
+  │  ├ sass/
   │  ├ css/
   │  ├ img/
   │  └ js/

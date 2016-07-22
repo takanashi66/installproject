@@ -16,7 +16,13 @@ cd $name
 mkdir common
 mkdir common/{css,img,js}
 
+cd common
+
 compass create --sass-dir "sass" --relative-assets --no-line-comments --bare
+
+cd ../
+
+mkdir gulp
 
 sudo npm init -y
 sudo npm install --save-dev gulp browser-sync gulp-compass gulp-plumber
