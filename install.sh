@@ -22,12 +22,12 @@ compass create --sass-dir "sass" --relative-assets --no-line-comments --bare
 
 cd ../
 
-mkdir gulp
+mkdir package
 
-cd gulp
+cd package
 
-sudo npm init -y
-sudo npm install --save-dev gulp browser-sync gulp-compass gulp-plumber
+npm init -y
+npm install --save-dev gulp browser-sync gulp-compass gulp-plumber
 
 git clone git@bitbucket.org:takanashi66/gulp_task.git
 cp gulp_task/gulpfile.js ./
@@ -37,5 +37,5 @@ cd ../
 
 git init;
 
-echo .* > .gitignore
-echo src/node_module >> .gitignore
+echo '.*' > .gitignore
+echo package >> .gitignore
