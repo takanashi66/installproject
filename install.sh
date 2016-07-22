@@ -24,6 +24,8 @@ cd ../
 
 mkdir gulp
 
+cd gulp
+
 sudo npm init -y
 sudo npm install --save-dev gulp browser-sync gulp-compass gulp-plumber
 
