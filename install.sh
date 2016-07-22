@@ -4,25 +4,26 @@ cd /Users/takanashi66/Dropbox/workspace/web/
 
 echo "What is file name? : "
 read name
+
+if [ "" == "$name" ];then
+  echo 'Error! no input name.'
+  exit 1
+fi
+
 mkdir $name
 cd $name
+
 mkdir common
-mkdir common/css
-mkdir common/img
-mkdir common/js
+mkdir common/{css,img,js}
 
-mkdir src
-cd src
-compass create --sass-dir "sass" --output-style "compressed" --relative-assets --no-line-comments --bare
+compass create --sass-dir "sass" --relative-assets --no-line-comments --bare
 
-mkdir css
-mkdir js
+sudo npm init -y
+sudo npm install --save-dev gulp browser-sync gulp-compass gulp-plumber
 
-sudo npm install --save-dev gulp browser-sync gulp-compass gulp-plumber gulp-pleeease gulp-uglify gulp-rename;
-
-git clone git@bitbucket.org:takanashi66/gulp_task.git;
-cp gulp_task/gulpfile.js ./;
-rm -rf gulp_task;
+git clone git@bitbucket.org:takanashi66/gulp_task.git
+cp gulp_task/gulpfile.js ./
+rm -rf gulp_task
 
 cd ../
 
