@@ -1,15 +1,5 @@
 #!/bin/sh
 
-echo "What is file directory? : "
-read directory
-
-if [ "" == "$directory" ];then
-  echo 'Error! no input directory.'
-  exit 1
-fi
-
-cd $directory
-
 echo "What is file name? : "
 read name
 
