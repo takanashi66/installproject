@@ -1,6 +1,14 @@
 #!/bin/sh
 
-cd /Users/takanashi66/Dropbox/workspace/web/
+echo "What is file directory? : "
+read directory
+
+if [ "" == "$directory" ];then
+  echo 'Error! no input directory.'
+  exit 1
+fi
+
+cd $directory
 
 echo "What is file name? : "
 read name
@@ -16,18 +24,12 @@ cd $name
 mkdir common
 mkdir common/{css,img,js}
 
-cd common
-
-compass create --sass-dir "sass" --relative-assets --no-line-comments --bare
-
-cd ../
-
 mkdir package
 
 cd package
 
 npm init -y
-npm install --save-dev gulp browser-sync gulp-compass gulp-plumber
+npm install --save-dev gulp browser-sync gulp-pleeease gulp-plumber gulp-sass
 
 git clone git@bitbucket.org:takanashi66/gulp_task.git
 cp gulp_task/gulpfile.js ./

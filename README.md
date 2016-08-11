@@ -3,10 +3,13 @@
 ```
 project/
   ├ common/
-  │  ├ sass/
   │  ├ css/
   │  ├ img/
   │  └ js/
-  ├ gulp/
+  ├ package/
+  │  ├ scss/
+  │  ├ node_modules/
+  │  ├ gulpfile
+  │  └ package.json
   └ index.html
 ```
