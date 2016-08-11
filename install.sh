@@ -1,22 +1,18 @@
 #!/bin/sh
 
-echo "What is file name? : "
-read name
-
-if [ "" == "$name" ];then
-  echo 'Error! no input name.'
-  exit 1
-fi
-
-mkdir $name
-cd $name
-
 mkdir common
 mkdir common/{css,img,js}
 
 mkdir package
 
 cd package
+
+mkdir sass
+cd sass
+
+git clone git@bitbucket.org:takanashi66/base.git
+
+cd ../
 
 npm init -y
 npm install --save-dev gulp browser-sync gulp-pleeease gulp-plumber gulp-sass
