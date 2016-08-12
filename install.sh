@@ -26,4 +26,4 @@ cd ../
 git init;
 
 echo '.*' > .gitignore
-echo package >> .gitignore
+echo package/node_modules >> .gitignore
