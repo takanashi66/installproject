@@ -15,7 +15,7 @@ git clone git@bitbucket.org:takanashi66/base.git
 cd ../
 
 npm init -y
-npm install --save-dev gulp browser-sync gulp-pleeease gulp-plumber gulp-sass
+npm install --save-dev gulp browser-sync gulp-pleeease gulp-plumber gulp-sass gulp-notify
 
 git clone git@bitbucket.org:takanashi66/gulp_task.git
 cp gulp_task/gulpfile.js ./
