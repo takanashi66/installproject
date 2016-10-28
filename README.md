@@ -2,14 +2,18 @@
 
 ```
 project/
-  ├ common/
-  │  ├ css/
-  │  ├ img/
-  │  └ js/
-  ├ package/
-  │  ├ scss/
-  │  ├ node_modules/
-  │  ├ gulpfile
-  │  └ package.json
-  └ index.html
+	├ htdocs/
+	│		├ common/
+	│	  │ 	├ sass/
+	│	  │ 	├ css/
+	│	  │ 	├ map/
+	│	  │ 	├ img/
+	│	  │ 	└ js/	
+	│		└index.html
+  │
+  ├ .git/
+  ├ node_modules/
+  ├ gulpfile.js
+  └ package.json
+  
 ```
