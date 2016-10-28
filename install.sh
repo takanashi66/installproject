@@ -20,4 +20,7 @@ mkdir common/{sass,img,js}
 
 cd common/sass
 
+echo '' > style.scss
+
 git clone git@bitbucket.org:takanashi66/base.git
+
