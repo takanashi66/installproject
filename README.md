@@ -1,19 +1,19 @@
-## Directory Map
+## ディレクトリマップ
 
 ```
 project/
 	├ htdocs/
 	│		├ common/
-	│	  │ 	├ sass/
-	│	  │ 	├ css/
-	│	  │ 	├ map/
-	│	  │ 	├ img/
-	│	  │ 	└ js/	
+	│		│ 	├ sass/
+	│		│ 	├ css/
+	│		│ 	├ map/
+	│		│ 	├ img/
+	│		│ 	└ js/	
 	│		└index.html
-  │
-  ├ .git/
-  ├ node_modules/
-  ├ gulpfile.js
-  └ package.json
+	│
+	├ .git/
+	├ node_modules/
+	├ gulpfile.js
+	└ package.json
   
 ```

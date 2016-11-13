@@ -1,7 +1,7 @@
 #!/bin/sh
 
 npm init -y
-npm install --save-dev gulp browser-sync gulp-plumber gulp-sass gulp-notify gulp-autoprefixer gulp-sourcemaps gulp-merge-media-queries gulp-minify-css gulp-uglify
+npm install --save-dev gulp browser-sync gulp-plumber gulp-sass gulp-notify gulp-autoprefixer gulp-sourcemaps gulp-merge-media-queries gulp-minify-css gulp-uglify gulp-minify-html
 
 git clone git@bitbucket.org:takanashi66/gulp_task.git
 cp gulp_task/gulpfile.js ./
@@ -20,7 +20,7 @@ mkdir common/{sass,img,js}
 
 cd common/sass
 
-echo '' > style.scss
+echo '@charset "UTF-8";' > style.scss
 
 git clone git@bitbucket.org:takanashi66/base.git
 
