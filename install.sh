@@ -5,6 +5,7 @@ npm install --save-dev gulp browser-sync gulp-plumber gulp-sass gulp-notify gulp
 
 git clone git@bitbucket.org:takanashi66/gulp_task.git
 cp gulp_task/gulpfile.js ./
+cp gulp_task/package.js ./
 rm -rf gulp_task
 
 git init;
