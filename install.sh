@@ -1,12 +1,11 @@
 #!/bin/sh
 
-npm init -y
-npm install --save-dev gulp browser-sync gulp-plumber gulp-sass gulp-notify gulp-autoprefixer gulp-sourcemaps gulp-merge-media-queries gulp-minify-css gulp-uglify gulp-minify-html
-
 git clone git@bitbucket.org:takanashi66/gulp_task.git
 cp gulp_task/gulpfile.js ./
-cp gulp_task/package.js ./
+cp gulp_task/package.json ./
 rm -rf gulp_task
+
+npm install --save-dev gulp browser-sync gulp-plumber gulp-sass gulp-notify gulp-autoprefixer gulp-sourcemaps gulp-merge-media-queries gulp-minify-css gulp-uglify gulp-minify-html
 
 git init;
 
@@ -19,7 +18,11 @@ cd htdocs/
 mkdir common
 mkdir common/{sass,img,js}
 
-cd common/sass
+cd common/js
+
+mkdir module
+
+cd ../sass
 
 mkdir page
 

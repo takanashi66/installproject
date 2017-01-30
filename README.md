@@ -6,11 +6,14 @@ project/
 	│		├ common/
 	│		│ 	├ sass/
   │		│ 	│   ├ base/
-  │		│ 	│   └ page/
+  │		│ 	│   ├ page/
+  │		│ 	│   └ style.scss
 	│		│ 	├ css/
 	│		│ 	├ map/
 	│		│ 	├ img/
 	│		│ 	└ js/	
+  │		│ 	│   ├ module/
+  │		│ 	│   └ script.js
 	│		└index.html
 	│
 	├ .git/
@@ -18,4 +21,3 @@ project/
 	├ gulpfile.js
 	└ package.json
   
-```
