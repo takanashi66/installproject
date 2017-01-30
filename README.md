@@ -5,6 +5,8 @@ project/
 	├ htdocs/
 	│		├ common/
 	│		│ 	├ sass/
+  │		│ 	│   ├ base/
+  │		│ 	│   └ page/
 	│		│ 	├ css/
 	│		│ 	├ map/
 	│		│ 	├ img/

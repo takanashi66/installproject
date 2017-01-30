@@ -21,7 +21,11 @@ mkdir common/{sass,img,js}
 
 cd common/sass
 
-echo '@charset "UTF-8";' > style.scss
+mkdir page
 
 git clone git@bitbucket.org:takanashi66/base.git
+
+cd base
+
+mv ./style.scss ../
 
