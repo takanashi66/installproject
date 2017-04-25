@@ -15,12 +15,13 @@ echo node_modules/ >> .gitignore
 mkdir htdocs
 cd htdocs/
 
+mkdir pug
 mkdir common
 mkdir common/{sass,img,js}
 
 cd common/js
 
-mkdir module
+mkdir es
 
 cd ../sass
 
