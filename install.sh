@@ -5,9 +5,9 @@ cp gulp_task/gulpfile.js ./
 cp gulp_task/package.json ./
 rm -rf gulp_task
 
-npm install --save-dev gulp browser-sync gulp-plumber gulp-sass gulp-notify gulp-autoprefixer gulp-sourcemaps gulp-merge-media-queries gulp-minify-css gulp-uglify gulp-minify-html gulp-concat
+npm install
 
-git init;
+git init
 
 echo '.*' > .gitignore
 echo node_modules/ >> .gitignore

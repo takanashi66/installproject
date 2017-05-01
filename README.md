@@ -11,13 +11,13 @@ project/
 	│		│ 	├ css/
 	│		│ 	├ map/
 	│		│ 	├ img/
-	│		│ 	└ js/	
-  │		│ 	│   ├ module/
+	│		│ 	└ js/
+  │		│ 	│   ├ es/
   │		│ 	│   └ script.js
+	│		├ pug/
 	│		└index.html
 	│
 	├ .git/
 	├ node_modules/
 	├ gulpfile.js
 	└ package.json
-  
