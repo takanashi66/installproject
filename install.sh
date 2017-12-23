@@ -15,21 +15,21 @@ echo node_modules/ >> .gitignore
 mkdir htdocs
 cd htdocs/
 
-mkdir pug
 mkdir common
-mkdir common/{sass,img,js}
 
-cd common/js
+cd ../
 
-mkdir es
+mkdir src
 
-cd ../sass
+cd src
 
+mkdir common
+mkdir common/{scss,img,js}
+cd common/scss
 mkdir page
 
 git clone git@bitbucket.org:takanashi66/base.git
 
 cd base
-
+rm -rf .git
 mv ./style.scss ../
-
