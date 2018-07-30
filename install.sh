@@ -27,7 +27,7 @@ mkdir {scss,js}
 cd scss
 mkdir page
 
-git clone git@bitbucket.org:takanashi66/base.git
+git clone https://github.com/takanashi66/base.git
 
 cd base
 rm -rf .git
