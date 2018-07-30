@@ -1,9 +1,9 @@
 #!/bin/sh
 
-git clone git@bitbucket.org:takanashi66/gulp_task.git
-cp gulp_task/gulpfile.js ./
-cp gulp_task/package.json ./
-rm -rf gulp_task
+git clone https://github.com/takanashi66/laravelmixconfig.git
+cp laravelmixconfig/webpack.mix.js ./
+cp laravelmixconfig/package.json ./
+rm -rf laravelmixconfig
 
 npm install
 
@@ -23,9 +23,8 @@ mkdir src
 
 cd src
 
-mkdir common
-mkdir common/{scss,img,js}
-cd common/scss
+mkdir {scss,js}
+cd scss
 mkdir page
 
 git clone git@bitbucket.org:takanashi66/base.git
@@ -33,3 +32,6 @@ git clone git@bitbucket.org:takanashi66/base.git
 cd base
 rm -rf .git
 mv ./style.scss ../
+
+cd ../../js
+echo '' > script.js

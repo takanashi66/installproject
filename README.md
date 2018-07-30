@@ -1,23 +1,7 @@
-## ディレクトリマップ
+# install
 
-```
-project/
-	├ htdocs/
-	│		├ common/
-	│		│ 	├ sass/
-  │		│ 	│   ├ base/
-  │		│ 	│   ├ page/
-  │		│ 	│   └ style.scss
-	│		│ 	├ css/
-	│		│ 	├ map/
-	│		│ 	├ img/
-	│		│ 	└ js/
-  │		│ 	│   ├ es/
-  │		│ 	│   └ script.js
-	│		├ pug/
-	│		└index.html
-	│
-	├ .git/
-	├ node_modules/
-	├ gulpfile.js
-	└ package.json
+installコマンドで環境設定を行う
+
+ディレクトリと以下の設定
++ Laravel Mix
++ git
