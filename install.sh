@@ -3,7 +3,7 @@
 git clone https://github.com/takanashi66/laravel-mix-config.git
 cp laravelmixconfig/webpack.mix.js ./
 cp laravelmixconfig/package.json ./
-rm -rf laravelmixconfig
+rm -rf laravel-mix-config
 
 npm install
 
