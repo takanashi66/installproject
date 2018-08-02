@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git clone https://github.com/takanashi66/laravelmixconfig.git
+git clone https://github.com/takanashi66/laravel-mix-config.git
 cp laravelmixconfig/webpack.mix.js ./
 cp laravelmixconfig/package.json ./
 rm -rf laravelmixconfig
