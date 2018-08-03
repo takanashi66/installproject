@@ -1,8 +1,8 @@
 #!/bin/sh
 
-git clone https://github.com/takanashi66/laravel-mix-config.git
-cp laravelmixconfig/webpack.mix.js ./
-cp laravelmixconfig/package.json ./
+git clone git@github.com:takanashi66/laravel-mix-config.git
+cp laravel-mix-config/webpack.mix.js ./
+cp laravel-mix-config/package.json ./
 rm -rf laravel-mix-config
 
 npm install
@@ -27,7 +27,7 @@ mkdir {scss,js}
 cd scss
 mkdir page
 
-git clone https://github.com/takanashi66/base.git
+git clone git@github.com:takanashi66/base.git
 
 cd base
 rm -rf .git
