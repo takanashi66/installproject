@@ -1,8 +1,7 @@
 #!/bin/sh
 
 git clone git@github.com:takanashi66/laravel-mix-config.git
-cp laravel-mix-config/webpack.mix.js ./
-cp laravel-mix-config/package.json ./
+cp laravel-mix-config/webpack.mix.js laravel-mix-config/package.json laravel    -mix-config/svg.config.json laravel-mix-config/svgo.config.json ./
 rm -rf laravel-mix-config
 
 npm install
