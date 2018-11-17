@@ -11,16 +11,20 @@ git init
 echo '.*' > .gitignore
 echo node_modules/ >> .gitignore
 
-mkdir htdocs
-cd htdocs/
+mkdir public
+cd public/
 
 mkdir common
 
 cd ../
 
-mkdir src
+mkdir resources
 
-cd src
+cd resources
+
+mkdir assets
+
+cd assets
 
 mkdir {scss,js}
 cd scss
