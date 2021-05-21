@@ -1,14 +1,13 @@
 #!/bin/sh
 
 git clone git@github.com:takanashi66/laravel-mix-config.git
-cp laravel-mix-config/webpack.mix.js laravel-mix-config/package.json laravel    -mix-config/svg.config.json laravel-mix-config/svgo.config.json ./
+cp laravel-mix-config/webpack.mix.js laravel-mix-config/package.json laravel-mix-config/svg.config.json laravel-mix-config/svgo.config.json laravel-mix-config/imagemin.config.js ./
 rm -rf laravel-mix-config
 
 npm install
 
 git init
 
-echo '.*' > .gitignore
 echo node_modules/ >> .gitignore
 
 mkdir public
