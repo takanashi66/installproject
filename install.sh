@@ -6,6 +6,10 @@ rm -rf laravel-mix-config
 
 npm install
 
+if [ $1 = "react" ]; then
+    npm i react react-dom
+fi
+
 git init
 
 echo node_modules/ >> .gitignore
