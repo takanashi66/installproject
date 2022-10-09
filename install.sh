@@ -22,7 +22,7 @@ fi
 echo "CHECK OK"
 
 git clone git@github.com:takanashi66/laravel-mix-config.git
-cp laravel-mix-config/webpack.mix.js laravel-mix-config/package.json laravel-mix-config/svg.config.json laravel-mix-config/svgo.config.json laravel-mix-config/imagemin.config.mjs ./
+cp laravel-mix-config/webpack.mix.js laravel-mix-config/package.json laravel-mix-config/svg.config.json laravel-mix-config/svgo.config.json laravel-mix-config/imagemin.config.mjs laravel-mix-config/.editorconfig ./
 
 # 引数にwpがある場合は追加でパッケージをインストール
 if [ $1 = "wp" ]; then
@@ -100,7 +100,6 @@ cat << EOF > index.html
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="common/css/style.css">
     <link rel="icon" href="" type="image/png">
@@ -123,7 +122,6 @@ cat << EOF > index.html
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="common/css/style.css">
     <link rel="icon" href="" type="image/png">
@@ -208,7 +206,6 @@ cat << EOF > index.php
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
     <link rel="icon" href="" type="image/png">
