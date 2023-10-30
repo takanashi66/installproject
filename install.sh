@@ -145,17 +145,18 @@ mkdir resources
 
 cd resources
 
-mkdir {scss,js}
-cd scss
-mkdir page
+mkdir {css,js}
+cd css
 
 git clone git@github.com:takanashi66/base.git
 
-cd base
-rm -rf .git
-mv ./style.scss ../
+mv ./base/modules ./
+mv ./base/pages ./
+mv ./base/style.css ./
 
-cd ../../js
+rm -rf ./base
+
+cd ../js
 if [ $1 = "react" ]; then
 # 引数にreactがあった場合app.jsを作成
 cat << EOF > app.js    
