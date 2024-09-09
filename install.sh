@@ -1,9 +1,20 @@
 #!/bin/sh
 
+if [ $1 = "vite" ]; then
+
+git clone git@github.com:takanashi66/vite.git
+cp -R vite/package.json vite/resources vite/vite.config.js ./
+npm install
+
+rm -rf vite
+
+else
+
+
 if [ $1 = "wp" ]; then
     if expr $2 : "[1-9][0-9][0-9][0-9]$" >&/dev/null;then
         if [ -n "$3" ]; then
-             val="$(echo $3 | sed -e 's/[^[:alnum:]]//g')"
+            val="$(echo $3 | sed -e 's/[^[:alnum:]]//g')"
             if [ "$val" != "$3" ]; then
                 echo "プロジェクト名は英数字のみで入力してください"
                 exit 1
@@ -101,8 +112,10 @@ cat << EOF > index.html
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" href="">
     <link rel="icon" href="" type="image/png">
+    <link rel="apple-touch-icon" href="" type="image/png">
+    <link rel="canonical" href="">
     <title>Document</title>
 </head>
 <body>
@@ -123,8 +136,10 @@ cat << EOF > index.html
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" href="">
     <link rel="icon" href="" type="image/png">
+    <link rel="apple-touch-icon" href="" type="image/png">
+    <link rel="canonical" href="">
     <title>Document</title>
 </head>
 <body>
@@ -209,6 +224,8 @@ cat << EOF > index.php
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
     <link rel="icon" href="" type="image/png">
+    <link rel="apple-touch-icon" href="" type="image/png">
+    <link rel="canonical" href="">
     <title>Document</title>
 </head>
 <body>
@@ -217,4 +234,7 @@ cat << EOF > index.php
 </html>
 EOF
 
+fi
+
+# viteかどうかのおわり
 fi

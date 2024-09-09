@@ -8,6 +8,11 @@ sh install
 -> デフォルトのパッケージ
 
 ```
+sh install vite
+```
+-> Viteのパッケージ
+
+```
 sh install react
 ```
 -> react用のパッケージ
@@ -19,7 +24,7 @@ sh install wp 1234 projectname
 
 
 ディレクトリと以下の設定
-+ Laravel Mix
++ Laravel Mix or Vite
 + git
 
 引数にreactを入れることで以下のパッケージを追加インストール
